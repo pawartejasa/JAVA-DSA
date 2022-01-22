@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Main {
+	
+	public static void main(String[] args) {
+		// Write your code here
+        Scanner sc = new Scanner(System.in);
+        int n= sc.nextInt();
+        double j=0;
+        int pow = 0;
+	 while(n>0){
+         int x=n%10;
+         if(x!= 0)
+         j=j + Math.pow(2,pow);
+         
+         pow++;
+         n=n/10;
+     }
+        int k= (int) j;
+        System.out.print(k);
+	}
+}

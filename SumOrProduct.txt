@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class Main {
+	
+	public static void main(String[] args) {
+		// Write your code here
+		Scanner sc = new Scanner(System.in);
+        int n= sc.nextInt();
+        int n2= sc.nextInt();
+        int x=0;
+        int y=1;
+        //int z=0;
+        if(n2==1){
+            for(int i=1;i<=n;i++){
+                x=x+i;
+            }
+            System.out.println(x);
+        }
+        else if(n2==2){
+            for(int i=1;i<=n;i++){
+                y=y*i;
+            }
+            System.out.println(y);
+        }
+        else{
+            System.out.println("-1");
+        }
+	}
+}
